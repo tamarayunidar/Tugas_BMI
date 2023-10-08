@@ -19,24 +19,23 @@ function prosesBMI() {
             }
 
     }else if (isNaN(berat) && tinggi >= 20) {
-            document.getElementById("hasil").innerHTML = "Tolong isi berat badan kamu!";
+            hasil.innerHTML = "Tolong isi berat badan kamu!";
             return;
     }else if (isNaN(tinggi) && berat >= 1) {
-            document.getElementById("hasil").innerHTML = "Tolong isi tinggi badan kamu!";
+            hasil.innerHTML = "Tolong isi tinggi badan kamu!";
             return;
     }else if(tinggi < 20 && !(isNaN(berat))){
-            document.getElementById("hasil").innerHTML = "Tolong isi tinggi badan anda dengan benar!";
+            hasil.innerHTML = "Tolong isi tinggi badan anda dengan benar!";
             return;
     }else if(berat < 1 && !(isNaN(tinggi))){
-            document.getElementById("hasil").innerHTML = "Tolong isi berat badan anda dengan benar!";
+            hasil.innerHTML = "Tolong isi berat badan anda dengan benar!";
             return;
     }else if(isNaN(berat) && isNaN(tinggi)){
-            document.getElementById("hasil").innerHTML = "Tolong isi berat badan dan tinggi badan anda!";
+            hasil.innerHTML = "Tolong isi berat badan dan tinggi badan anda!";
             return;
     }else{
-            document.getElementById("hasil").innerHTML = "Tolong isi dengan benar!";
+            hasil.innerHTML = "Tolong isi dengan benar!";
             return;
     }
    
 }
-
